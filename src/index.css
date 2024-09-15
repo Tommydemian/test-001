@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --section-padding: 2rem;
+    --text-color: #1c1c1e;
+  }
+
+  body {
+    color: var(--text-color);
+  }
+
+  dd,
+  dt {
+    display: inline-flex;
+  }
+}
+
+/* Utils */
+.flow-content > * {
+  margin-bottom: 0.5rem;
+}
+.flow-content > *:last-child {
+  margin-bottom: 0;
+}
